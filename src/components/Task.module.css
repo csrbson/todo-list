@@ -1,0 +1,72 @@
+.tasks {
+  display: flex;
+  justify-content: flex-start;
+
+  background: var(--gray-500);
+
+  padding: 1rem;
+  margin-bottom: 12px;
+
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+}
+
+Button {
+  background: transparent;
+  
+  border: 0;
+  border-radius: 8px;
+ 
+  cursor: pointer;  
+}
+Button:focus {
+  outline: transparent;
+  box-shadow: none;
+  color: var(--white);
+}
+
+.trashButton{
+  color: var(--gray-300);
+  padding: 5px 5px 0;
+}
+.trashButton:hover {
+  background: var(--gray-300);
+  color: var(--danger);
+}
+
+.tasks span {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--gray-100);
+  margin: 0 12px;
+  flex: 1;
+}
+
+.normal {
+  color: var(--blue);
+}
+.normal:hover {
+  color: var(--blue-dark);
+}
+
+.checked {
+  color: var(--purple-dark);
+}
+.checked:hover {
+  color: var(--purple);
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.trash {
+  color: var(--gray-300);
+  background: var(--gray-300);
+  padding: 5px;
+}
+.trash:hover {
+  background: var(--gray-400);
+  color: var(--danger);
+}
